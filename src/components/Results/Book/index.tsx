@@ -1,7 +1,7 @@
 import { LazyLoadImage, ScrollPosition, trackWindowScroll } from "react-lazy-load-image-component";
 
 import styles from "../index.module.scss";
-import { TBook } from "../../../App";
+import { TBook } from "@/App";
 
 const Book = ({ book, setModal, scrollPosition }: { book: TBook, setModal(modal?: TBook): void, scrollPosition: ScrollPosition  }) => {
 

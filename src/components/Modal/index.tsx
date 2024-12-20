@@ -1,11 +1,10 @@
-import { useQuery } from "@tanstack/react-query";
-import { TBook } from "../../App";
+import { TBook } from "@/App";
 import styles from "./index.module.scss";
-import Rating from "../Rating";
+import Rating from "@components/Rating";
 import SubSearch from "./SubSearch";
 import { FaRegCircleXmark } from "react-icons/fa6";
 import { useEffect } from "react";
-import { searchByAuthor, searchBySimilarity } from "../../query";
+import { searchByAuthor, searchBySimilarity } from "@query";
 
 
 const Modal = ({ modal, close, setModal }: { modal?: TBook, close(): void, setModal(modal: TBook): void }) => {

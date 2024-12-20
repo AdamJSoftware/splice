@@ -1,8 +1,8 @@
 import './App.css';
-import Search from './components/Search';
+import Search from '@components/Search';
 import { useState } from 'react';
-import Results from './components/Results';
-import Modal from './components/Modal';
+import Results from '@components/Results';
+import Modal from '@components/Modal';
 
 
 export type TBook = {

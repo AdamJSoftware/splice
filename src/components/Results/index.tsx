@@ -1,10 +1,10 @@
-import { TBook } from "../../App";
+import { TBook } from "@/App";
 import styles from "./index.module.scss";
-import Skeleton from "../Skeleton";
-import { searchByText } from "../../query";
+import Skeleton from "@components/Skeleton";
+import { searchByText } from "@query";
 import Book from "./Book";
 
-const Results = ({ setModal, search }: { setModal(modal?: TBook): void, search: string }) => {
+const Results = ({ setModal, search }: { setModal(modal?: TBook): void, search?: string }) => {
   const { data, isLoading, isSuccess, isError } = searchByText({ search });
 
   if (isLoading) {

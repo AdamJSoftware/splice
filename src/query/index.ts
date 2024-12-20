@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import { TBook } from "../App";
+import { TBook } from "@/App";
 
 const fields = ["author_name", "title", "cover_i", "key", "ratings_average", "ratings_count", "oclc", "first_publish_year", "first_sentence", "ddc_sort", "ddc"];
 
-export const searchByText = ({ search }: { search: string }) => {
+export const searchByText = ({ search }: { search?: string }) => {
   return useQuery<{
     numFound: number;
     offset: number;
