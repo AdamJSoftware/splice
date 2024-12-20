@@ -1,0 +1,12 @@
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+}
+
+.slide_root {
+  height: 100%;
+}
