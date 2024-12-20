@@ -1,4 +1,3 @@
-import { useQuery } from '@tanstack/react-query';
 import './App.css';
 import Search from './components/Search';
 import { useState } from 'react';
